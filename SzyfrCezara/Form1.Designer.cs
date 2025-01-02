@@ -67,7 +67,7 @@
             label2.Name = "label2";
             label2.Size = new Size(211, 21);
             label2.TabIndex = 2;
-            label2.Text = "Wpisz klucz szyfrujacy (1-32)";
+            label2.Text = "Wpisz klucz szyfrujacy (1-31)";
             // 
             // txtKlucz
             // 

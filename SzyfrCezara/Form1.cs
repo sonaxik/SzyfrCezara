@@ -14,6 +14,11 @@ namespace SzyfrCezara
             string tekst = txtWejscie.Text.ToLower();
             if (int.TryParse(txtKlucz.Text, out int klucz))
             {
+                if (klucz < 1 || klucz > 31)
+                {
+                    MessageBox.Show("Klucz musi znajdowaæ siê w przedziale od 1 do 31.", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 txtWynik.Text = SzyfrCezara(tekst, klucz);
                 txtWynik.Visible = true;
             }
@@ -28,6 +33,11 @@ namespace SzyfrCezara
             string tekst = txtWejscie.Text.ToLower();
             if (int.TryParse(txtKlucz.Text, out int klucz))
             {
+                if (klucz < 1 || klucz > 31)
+                {
+                    MessageBox.Show("Klucz musi znajdowaæ siê w przedziale od 1 do 31.", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 txtWynik.Text = SzyfrCezara(tekst, -klucz);
                 txtWynik.Visible = true;
             }
